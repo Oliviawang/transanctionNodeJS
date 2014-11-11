@@ -1,0 +1,42 @@
+//
+   Created by owang on 10/8/14.
+
+form#moneyForm
+        div.input-group
+            span.input-group-addon To:
+            input.form-control(type='text',placeholder="example@paypal.com",name="to")
+        div.input-group
+            span.input-group-addon Amount:
+            input.form-control(type='text',name="amount", placeholder='1.00')
+            div.input-group-btn
+                button#currency.btn.btn-default.dropdown-toggle(type="button",data-toggle="dropdown")
+                    | USD
+                    span.caret
+                ul#dropdown.dropdown-menu.dropdown-menu-right(role="menu")
+                    li
+                        a(href="#") USD
+                    li
+                        a(href="#") CNY
+                    li
+                        a(href="#") CAD
+                    li
+                        a(href="#") EUR
+                    li
+                        a(href="#") JPY
+                    li
+                        a(href="#") AUD
+        div.input-group
+            span.input-group-addon Message:(optional)
+            input.form-control(type="textarea",name="message")
+        span What's this payment for?
+        div.input-group.vertical-border
+            span.input-group-addon.text-left
+                input(type='radio',name='option',value='1')
+                |  I am sending money to family or friends
+                br
+                input(type='radio',name='option',value='2')
+                |  I am paying for goods or servcies
+        div.input-group.button-group
+            button#clear.btn.btn-default(type="button") Clear
+            button#next.btn.btn-primary(type="button")  Next
+div#loader

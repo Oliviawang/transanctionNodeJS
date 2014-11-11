@@ -1,0 +1,14 @@
+//
+   Created by owang on 10/7/14.
+
+extends base
+block scripts
+   script.
+      require(['viewTransaction'], function (vt){
+          vt.load();
+      });
+block content
+    .content
+      #tran-list
+      a(href='/' style='margin-left:25px')
+       button.btn.btn-default(style='margin-top:10px;') Back

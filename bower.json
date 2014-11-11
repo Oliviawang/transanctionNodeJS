@@ -1,0 +1,38 @@
+{
+  "name": "launchpad-ui",
+  "version": "0.0.1",
+  "authors": [
+    "Olivia Wang <olivia.wang@cyaninc.com>"
+  ],
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "cyantv"
+  ],
+  "license": "Cyan",
+  "homepage": "http://github.cyanoptics.com/UI/launchpad-ui.git/",
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    ".jshintrc",
+    ".jshintignore",
+    "Makefile",
+    "Gruntfile.js",
+    "*.md",
+    "package.json",
+    "src",
+    "spec",
+    "build"
+  ],
+  "dependencies": {
+    "requirejs": "~2.1.14",
+    "require-css": "~0.1.5",
+    "jquery": "~2.1.1",
+    "jade":"^1.7.0",
+    "lodash": "^2.4.1",
+    "bootstrap":"^3.2.0",
+    "jquery-waypoints":"^2.0.5",
+    "q-xhr":"^0.1.2"
+  }
+}

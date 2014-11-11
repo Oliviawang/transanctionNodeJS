@@ -1,0 +1,34 @@
+//
+   Created by owang on 10/6/14.
+
+doctype html
+meta(charset='utf-8')
+html(xmlns='http://www.w3.org/1999/xhtml')
+    head
+        block title
+        link(type='image/x-icon', rel='shortcut icon', href='#{static}/icons/common/favicon.ico')
+        link(rel='stylesheet', type='text/css', href='#{base}/bower_components/bootstrap/dist/css/bootstrap.min.css')
+        link(rel='stylesheet', type='text/css', href='#{static}/css/main.css')
+
+
+        block styles
+        script(type='text/javascript', src='#{base}/bower_components/requirejs/require.js')
+        script(type='text/javascript', src='#{base}/bower_components/jquery/dist/jquery.min.js')
+        script(type='text/javascript', src='#{base}/bower_components/bootstrap/dist/js/bootstrap.min.js')
+        script.
+            var staticPath = '#{static}';
+            requirejs.config({
+               baseUrl: '#{static}/js'
+            });
+        script(type='text/javascript', src='#{base}/app.config.js')
+        block scripts
+    body
+        div#header
+          div(class="paypal-img-logo") PayPal
+          h1 #{title}
+
+        block content
+        block footer
+            footer
+
+                span#footer  2014 CopyRight @

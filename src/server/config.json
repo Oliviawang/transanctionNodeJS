@@ -1,0 +1,10 @@
+{
+    "fix": [
+        "/api/v1/spec?format=swagger"
+    ],
+    "server": {
+        "port": 3000,
+        "prod": false
+    },
+    "app": "paypal"
+}

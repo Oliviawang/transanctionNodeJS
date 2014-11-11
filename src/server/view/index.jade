@@ -1,0 +1,20 @@
+//
+   Created by owang on 10/6/14.
+
+extends base
+block scripts
+  script.
+
+      require(['jquery'], function ($){
+          $('#sendMoney').find('button').css('width', $('#viewHistory').width());
+      });
+block content
+     .content
+         #init
+           ul
+             li
+               a#sendMoney(href='/send-money')
+                button.btn.btn-lg.btn-default.btn-xlarge Send Money
+             li
+               a#viewHistory(href='/view-transaction')
+                button.btn.btn-lg.btn-default.btn-xlarge View Transaction History

@@ -1,0 +1,14 @@
+//
+   Created by owang on 10/6/14.
+
+extends base
+block content
+    .content
+       .succ-message
+           h3 You have sent #{amount} #{currency} to #{to} !
+       .tick-check
+       div#success-btn-group
+         a(href='/send-money')
+            button.btn.btn-lg.btn-default Send Money
+         a(href='/view-transaction')
+            button.btn.btn-lg.btn-default View Transaction History
